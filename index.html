@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icone" type="images/jpg" href="./images/core.jpg">
+    <link rel="icon" type="image/jpg" href="./images/core.jpg">
     <title>Hello Kitty: Um universo paralelo</title>
     <link rel="stylesheet" href="css/style.css"/>
 <style>
@@ -104,7 +104,7 @@ header .logo img {
 h1{
     justify-content: center;
     flex-direction: column;
-    font-size: 1.8em;
+    font-size: 2em;
     margin-bottom: 15px;
     color: #97315d;
     display: flex;
@@ -130,7 +130,7 @@ h1{
         }
 
         .paragrafo p {
-            font-size: 1em;
+            font-size: 1.1em;
             color: #555;
         }
         .new {
@@ -141,15 +141,31 @@ h1{
         .new img {
             width: 600px; 
             height: auto; 
-            border-radius: 10px; 
+            border-radius: 0px; 
+            transform: translateX(100px); 
+            transition: transform 0.5s;
         }
         .new h2 {
-            font-size: 18px;
+            font-size: 22px;
             color: #333; 
             margin: 0;
         }
-
-
+        .noticias {
+    width: 40%; 
+    margin: 0 auto; 
+    text-align: justify;
+    transform: translate(0, 0); 
+    transition: transform 0.5s;
+}
+.noticias h2 {
+    margin-bottom: 10px; 
+    font-size: 1.5em;
+}
+.noticias p {
+    margin-top: 0;
+    font-size: 1.1em;
+    color: #555;
+}
     </style>
 </head>
 <body>
@@ -171,11 +187,21 @@ h1{
         <h1>Multiverso Hello Kitty</h1>
         <p>No incrível Multiverso Hello Kitty, nossa querida gatinha vive aventuras como você nunca imaginou! Ela não é apenas a fofinha de laço vermelho; em cada universo, Hello Kitty assume uma nova personalidade e embarca em jornadas únicas. Em um dia, ela é uma roqueira de jaqueta de couro e guitarra em punho, arrasando nos palcos; no outro, ela explora galáxias distantes como uma astronauta corajosa, com capacete e tudo! Em outro universo, ela é uma chef renomada, criando pratos deliciosos com seu chapéu de cozinheira e colher de pau. Cada versão da Hello Kitty nos mostra que, no mundo dela, não há limite para sonhar e experimentar—basta escolher seu próximo destino e soltar a imaginação!</p>
     </div>
-    <h1>Notícias e Atualizações</h1>
+        <h1>Notícias e Atualizações</h1>
     <div class="new">
         <img src="C:\Users\heloi\Downloads\Leonardo_Phoenix_Create_an_illustration_of_a_Hello_Kitty_astro_3.jpg" alt="Logo" />
-        <h2>Hello Kitty astronauta, em missão para descobrir um planeta desconhecido, fica presa em uma galáxia fora da Via Láctea.</h2>
+        <div class="noticias">
+            <h2>Hello Kitty astronauta em missão intergaláctica fica presa em galáxia desconhecida.</h2>
+            <p>Em uma emocionante missão espacial, a icônica Hello Kitty, agora em sua nova fase como astronauta, embarcou em uma aventura épica para explorar planetas além da Via Láctea. A jornada, que começou com o objetivo de descobrir um mundo completamente inexplorado, ganhou um desdobramento inesperado: Hello Kitty e sua nave acabaram presas em uma galáxia misteriosa e nunca antes registrada pelos cientistas.
+        
+                A expedição fazia parte de um esforço conjunto para expandir os horizontes do conhecimento universal e encontrar novas formas de vida. Após atravessar uma nebulosa densa, a nave foi desviada por forças gravitacionais desconhecidas, deixando Hello Kitty isolada em um ponto fora do alcance direto da comunicação terrestre.
+                
+                De acordo com os primeiros relatórios da equipe de suporte, a nave está segura, e Hello Kitty, conhecida por sua resiliência e positividade, já iniciou uma análise detalhada do ambiente em que está. As primeiras imagens enviadas revelam um cenário de estrelas vibrantes e planetas com características intrigantes, como oceanos cristalinos e atmosferas multicoloridas.
+                
+                Os fãs ao redor do mundo aguardam ansiosamente por novas atualizações dessa missão histórica, enquanto cientistas buscam soluções para trazer Hello Kitty de volta em segurança. Enquanto isso, ela segue cumprindo seu papel de desbravadora do desconhecido, trazendo um toque de fofura e coragem à fronteira final do universo.</p>
+        </div>
     </div>
+    <h1>Conheça agora as variações de Hello Kitty</h1>
     </style>
 </head>
     <div id="card-list" class="card-list"></div>
@@ -203,19 +229,19 @@ h1{
                 imageUrl:"images/enem.jpg"
             },
             {
-                title: "",
+                title: "Hello Kitty programadora",
                 description: "",
-                imageUrl: ""
+                imageUrl: "images/programadora.jpg"
             },
             {
-                title: "",
+                title: "Hello Kitty médica",
                 description: "",
-                imageUrl: ""
+                imageUrl: "images/medica.jpg"
             },
             {
-                title: "",
+                title: "Hello Kitty presidente",
                 description: "",
-                imageUrl: ""
+                imageUrl: "images/presidente.jpg"
             },
             {
                 title: "",
