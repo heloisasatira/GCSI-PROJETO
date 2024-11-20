@@ -1,0 +1,12 @@
+{
+  "name": "gcsi-projeto",
+  "version": "1.0.0",
+  "description": "Um projeto básico de servidor Node.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
