@@ -7,7 +7,6 @@
     <title>Hello Kitty: Um universo paralelo</title>
     <link rel="stylesheet" href="css/style.css"/>
     <style>
-       
         * {
             margin: 0;
             padding: 0;
@@ -82,12 +81,33 @@
             color: #555;
         }
 
+        .news-section {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-section h2 {
+            font-size: 2em;
+            color: #ff679b;
+            margin-bottom: 15px;
+        }
+
+        .news-section p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #555;
+        }
+
         .card-list {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
             padding: 20px;
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
@@ -121,16 +141,62 @@
             margin: 10px 0;
         }
 
-        .card-content p {
-            font-size: 0.95em;
-            color: #666;
-        }
-
         h1.section-title {
             text-align: center;
             font-size: 2em;
             color: #ff679b;
             margin: 40px 0 20px;
+        }
+        .news-section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+    
+        .news-section h2 {
+            text-align: center;
+            font-size: 1.8em;
+            color: #ff679b;
+            margin-bottom: 15px;
+        }
+    
+        .news-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+    
+        .news-content img {
+            flex: 1;
+            max-width: 300px; 
+            height: auto;    
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+    
+        .news-text {
+            flex: 2;
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+        }
+    
+        .news-text strong {
+            color: #333;
+        }
+        header nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffe5f2;
         }
     </style>
 </head>
@@ -142,20 +208,32 @@
         <h1>Hellokittyverso</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#multiverso">Multiverso Hello Kitty</a></li>
+                <li><a href="#noticias">Notícias e Atualizações</a></li>
+                <li><a href="#versoes">Conheça as versões da Hello Kitty</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="paragrafo">
+    <div id="multiverso" class="paragrafo">
         <h1>Multiverso Hello Kitty</h1>
-        <p>Bem-vindo ao Hellokittyverso! Aqui, você conhecerá as diferentes versões da Hello Kitty em universos paralelos, cada uma mais incrível do que a outra. Prepare-se para explorar mundos onde a Hello Kitty é uma programadora, uma médica, uma rockeira e muito mais!</p>
+        <p> Bem-vindo ao<strong> Hellokittyverso!</strong> Aqui, você conhecerá as diferentes versões da Hello Kitty em universos paralelos, cada uma mais incrível do que a outra. Prepare-se para explorar mundos onde a Hello Kitty é uma programadora, uma médica, uma rockeira e muito mais!</p>
     </div>
 
-    <h1 class="section-title">Conheça as versões da Hello Kitty</h1>
+    
+    <div id="noticias" class="news-section">
+    <h2>Notícias e Atualizações</h2>
+    <div class="news-content">
+        <img src="images/astronauta.jpg" alt="Hello Kitty Astronauta" />
+        <div class="news-text">
+            <p><strong>Hello Kitty astronauta em missão intergaláctica fica presa em galáxia desconhecida.</strong></p>
+            <p>Em uma emocionante missão espacial, a icônica Hello Kitty, agora em sua nova fase como astronauta, embarcou em uma aventura épica para explorar planetas além da Via Láctea. A jornada, que começou com o objetivo de descobrir um mundo completamente inexplorado, ganhou um desdobramento inesperado: Hello Kitty e sua nave acabaram presas em uma galáxia misteriosa e nunca antes registrada pelos cientistas.
+    
+             </p>
+        </div>
+    </div>
+</div>
+<h1 id="versoes" class="section-title">Conheça as versões da Hello Kitty</h1>
     <div id="card-list" class="card-list"></div>
 
     <script>
@@ -194,4 +272,3 @@
     </script>
 </body>
 </html>
-s
